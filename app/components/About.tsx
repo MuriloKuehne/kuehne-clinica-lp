@@ -33,20 +33,15 @@ export default function About() {
   return (
     <section
       id="about"
-      className="py-20 sm:py-24 lg:py-32 bg-gradient-to-b from-white to-brown-50"
+      className="py-20 sm:py-24 lg:py-32 bg-grey-light"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-brown-800 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-brown-dark mb-4">
             Sobre a Kuehne Clínica Médica
           </h2>
-          <div className="w-24 h-1 bg-gold-500 mx-auto mb-6" />
-          <p className="text-lg text-gray-700 leading-relaxed">
-            Há anos dedicados à excelência em cuidados de saúde, a Kuehne
-            Clínica Médica representa o compromisso com a saúde e bem-estar de
-            nossa comunidade.
-          </p>
+          <div className="w-24 h-1 bg-gold mx-auto mb-6" />
         </div>
 
         {/* Image and Mission */}
@@ -60,26 +55,20 @@ export default function About() {
             />
           </div>
           <div className="space-y-6">
-            <h3 className="text-2xl sm:text-3xl font-bold text-brown-800">
+            <h3 className="text-2xl sm:text-3xl font-bold text-brown-dark">
               Nossa Missão
             </h3>
-            <p className="text-gray-700 leading-relaxed text-lg">
+            <p className="text-brown-dark leading-relaxed text-lg">
               Proporcionar cuidados de saúde de excelência, combinando
               conhecimento médico avançado com um atendimento humanizado e
-              acolhedor. Nosso compromisso é com a saúde integral de cada
-              paciente, oferecendo soluções médicas personalizadas e eficazes.
-            </p>
-            <p className="text-gray-700 leading-relaxed text-lg">
-              Acreditamos que a medicina vai além do tratamento de doenças - é
-              sobre prevenção, educação e cuidado contínuo para garantir uma
-              vida saudável e plena.
+              acolhedor.
             </p>
           </div>
         </div>
 
         {/* Values */}
         <div>
-          <h3 className="text-2xl sm:text-3xl font-bold text-brown-800 text-center mb-12">
+          <h3 className="text-2xl sm:text-3xl font-bold text-brown-dark text-center mb-12">
             Nossos Valores
           </h3>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -88,18 +77,18 @@ export default function About() {
               return (
                 <Card
                   key={index}
-                  className="border-brown-200 hover:shadow-lg transition-shadow duration-300 hover:border-gold-400"
+                  className="border-grey hover:shadow-lg transition-shadow duration-300 hover:border-gold bg-white"
                 >
                   <CardContent className="p-6 text-center">
                     <div className="flex justify-center mb-4">
-                      <div className="p-3 bg-brown-100 rounded-full">
-                        <Icon className="h-8 w-8 text-brown-700" />
+                      <div className="p-3 bg-grey-light rounded-full">
+                        <Icon className="h-8 w-8 text-brown-dark" />
                       </div>
                     </div>
-                    <h4 className="text-xl font-semibold text-brown-800 mb-3">
+                    <h4 className="text-xl font-semibold text-brown-dark mb-3">
                       {value.title}
                     </h4>
-                    <p className="text-gray-600 leading-relaxed">
+                    <p className="text-brown-dark leading-relaxed">
                       {value.description}
                     </p>
                   </CardContent>

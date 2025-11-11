@@ -55,14 +55,10 @@ export default function MedicalTeam() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-brown-800 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-brown-dark mb-4">
             Nossa Equipe Médica
           </h2>
-          <div className="w-24 h-1 bg-gold-500 mx-auto mb-6" />
-          <p className="text-lg text-gray-700 leading-relaxed">
-            Uma equipe de profissionais altamente qualificados e dedicados ao
-            seu bem-estar e saúde.
-          </p>
+          <div className="w-24 h-1 bg-gold mx-auto mb-6" />
         </div>
 
         {/* Team Grid */}
@@ -70,7 +66,7 @@ export default function MedicalTeam() {
           {teamMembers.map((member, index) => (
             <Card
               key={index}
-              className="border-brown-200 overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group"
+              className="border-grey overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group bg-white"
             >
               <div className="relative h-80 overflow-hidden">
                 <Image
@@ -79,19 +75,19 @@ export default function MedicalTeam() {
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-brown-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-t from-brown-dark/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-brown-800 mb-1">
+                <h3 className="text-xl font-bold text-brown-dark mb-1">
                   {member.name}
                 </h3>
-                <p className="text-gold-600 font-semibold mb-2">
+                <p className="text-gold font-semibold mb-2">
                   {member.title}
                 </p>
-                <p className="text-brown-600 text-sm mb-3 font-medium">
+                <p className="text-brown-dark text-sm mb-3 font-medium">
                   {member.specialization}
                 </p>
-                <p className="text-gray-600 leading-relaxed text-sm">
+                <p className="text-brown-dark leading-relaxed text-sm">
                   {member.bio}
                 </p>
               </CardContent>

@@ -56,14 +56,10 @@ export default function Testimonials() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-brown-800 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-brown-dark mb-4">
             O Que Nossos Pacientes Dizem
           </h2>
-          <div className="w-24 h-1 bg-gold-500 mx-auto mb-6" />
-          <p className="text-lg text-gray-700 leading-relaxed">
-            A satisfação e confiança de nossos pacientes são nossa maior
-            recompensa. Veja o que eles têm a dizer sobre nossos serviços.
-          </p>
+          <div className="w-24 h-1 bg-gold mx-auto mb-6" />
         </div>
 
         {/* Testimonials Grid */}
@@ -71,7 +67,7 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <Card
               key={index}
-              className="border-brown-200 hover:shadow-lg transition-all duration-300"
+              className="border-grey hover:shadow-lg transition-all duration-300 bg-white"
             >
               <CardContent className="p-6">
                 {/* Rating */}
@@ -79,19 +75,19 @@ export default function Testimonials() {
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star
                       key={i}
-                      className="h-5 w-5 fill-gold-400 text-gold-400"
+                      className="h-5 w-5 fill-gold text-gold"
                     />
                   ))}
                 </div>
 
                 {/* Testimonial Text */}
-                <p className="text-gray-700 leading-relaxed mb-6 italic">
+                <p className="text-brown-dark leading-relaxed mb-6 italic">
                   "{testimonial.text}"
                 </p>
 
                 {/* Author */}
                 <div className="flex items-center gap-4">
-                  <div className="relative w-12 h-12 rounded-full overflow-hidden bg-brown-200">
+                  <div className="relative w-12 h-12 rounded-full overflow-hidden bg-grey">
                     <Image
                       src={testimonial.image}
                       alt={testimonial.name}
@@ -100,10 +96,10 @@ export default function Testimonials() {
                     />
                   </div>
                   <div>
-                    <p className="font-semibold text-brown-800">
+                    <p className="font-semibold text-brown-dark">
                       {testimonial.name}
                     </p>
-                    <p className="text-sm text-gray-600">{testimonial.role}</p>
+                    <p className="text-sm text-brown-dark">{testimonial.role}</p>
                   </div>
                 </div>
               </CardContent>

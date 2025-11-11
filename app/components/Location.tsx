@@ -15,19 +15,15 @@ export default function Location() {
   return (
     <section
       id="location"
-      className="py-20 sm:py-24 lg:py-32 bg-white"
+      className="py-20 sm:py-24 lg:py-32 bg-grey-light"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-brown-800 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-brown-dark mb-4">
             Localização e Contato
           </h2>
-          <div className="w-24 h-1 bg-gold-500 mx-auto mb-6" />
-          <p className="text-lg text-gray-700 leading-relaxed">
-            Estamos prontos para atendê-lo. Venha nos visitar ou entre em
-            contato conosco.
-          </p>
+          <div className="w-24 h-1 bg-gold mx-auto mb-6" />
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8">
@@ -47,35 +43,35 @@ export default function Location() {
 
           {/* Contact Information */}
           <div className="space-y-6">
-            <Card className="border-brown-200">
+            <Card className="border-grey bg-white">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
-                  <div className="p-3 bg-brown-100 rounded-full">
-                    <MapPin className="h-6 w-6 text-brown-700" />
+                  <div className="p-3 bg-grey-light rounded-full">
+                    <MapPin className="h-6 w-6 text-brown-dark" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-brown-800 mb-2">
+                    <h3 className="font-semibold text-brown-dark mb-2">
                       Endereço
                     </h3>
-                    <p className="text-gray-700 leading-relaxed">{address}</p>
+                    <p className="text-brown-dark leading-relaxed">{address}</p>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="border-brown-200">
+            <Card className="border-grey bg-white">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
-                  <div className="p-3 bg-brown-100 rounded-full">
-                    <Phone className="h-6 w-6 text-brown-700" />
+                  <div className="p-3 bg-grey-light rounded-full">
+                    <Phone className="h-6 w-6 text-brown-dark" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-brown-800 mb-2">
+                    <h3 className="font-semibold text-brown-dark mb-2">
                       Telefone
                     </h3>
                     <a
                       href={`tel:${phone.replace(/\s/g, "")}`}
-                      className="text-gray-700 hover:text-brown-700 transition-colors"
+                      className="text-brown-dark hover:text-gold transition-colors"
                     >
                       {phone}
                     </a>
@@ -84,19 +80,19 @@ export default function Location() {
               </CardContent>
             </Card>
 
-            <Card className="border-brown-200">
+            <Card className="border-grey bg-white">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
-                  <div className="p-3 bg-brown-100 rounded-full">
-                    <Mail className="h-6 w-6 text-brown-700" />
+                  <div className="p-3 bg-grey-light rounded-full">
+                    <Mail className="h-6 w-6 text-brown-dark" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-brown-800 mb-2">
+                    <h3 className="font-semibold text-brown-dark mb-2">
                       Email
                     </h3>
                     <a
                       href={`mailto:${email}`}
-                      className="text-gray-700 hover:text-brown-700 transition-colors"
+                      className="text-brown-dark hover:text-gold transition-colors"
                     >
                       {email}
                     </a>
@@ -105,21 +101,21 @@ export default function Location() {
               </CardContent>
             </Card>
 
-            <Card className="border-brown-200">
+            <Card className="border-grey bg-white">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
-                  <div className="p-3 bg-brown-100 rounded-full">
-                    <Clock className="h-6 w-6 text-brown-700" />
+                  <div className="p-3 bg-grey-light rounded-full">
+                    <Clock className="h-6 w-6 text-brown-dark" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-brown-800 mb-4">
+                    <h3 className="font-semibold text-brown-dark mb-4">
                       Horário de Funcionamento
                     </h3>
                     <div className="space-y-2">
                       {openingHours.map((schedule, index) => (
                         <div
                           key={index}
-                          className="flex justify-between text-gray-700"
+                          className="flex justify-between text-brown-dark"
                         >
                           <span>{schedule.day}</span>
                           <span className="font-medium">{schedule.hours}</span>

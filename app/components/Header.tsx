@@ -28,51 +28,51 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-white/95 backdrop-blur-sm shadow-md"
-          : "bg-white/80 backdrop-blur-sm"
+          ? "bg-grey-light/95 backdrop-blur-sm shadow-md"
+          : "bg-grey-light/90 backdrop-blur-sm"
       }`}
     >
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <div className="flex items-center">
+        <div className="flex flex-col items-center h-auto py-4">
+          {/* Centered Clinic Name */}
+          <div className="flex items-center justify-center w-full mb-4">
             <button
               onClick={() => scrollToSection("hero")}
-              className="text-2xl font-bold text-brown-700 hover:text-brown-800 transition-colors"
+              className="text-3xl sm:text-4xl font-bold text-brown-dark hover:text-gold transition-colors text-center"
             >
               Kuehne Clínica Médica
             </button>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             <button
               onClick={() => scrollToSection("about")}
-              className="text-gray-700 hover:text-brown-700 font-medium transition-colors"
+              className="text-brown-dark hover:text-gold font-medium transition-colors"
             >
               Sobre
             </button>
             <button
               onClick={() => scrollToSection("team")}
-              className="text-gray-700 hover:text-brown-700 font-medium transition-colors"
+              className="text-brown-dark hover:text-gold font-medium transition-colors"
             >
               Equipe
             </button>
             <button
               onClick={() => scrollToSection("services")}
-              className="text-gray-700 hover:text-brown-700 font-medium transition-colors"
+              className="text-brown-dark hover:text-gold font-medium transition-colors"
             >
               Especialidades
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className="text-gray-700 hover:text-brown-700 font-medium transition-colors"
+              className="text-brown-dark hover:text-gold font-medium transition-colors"
             >
               Contato
             </button>
             <Button
               onClick={() => scrollToSection("appointment")}
-              className="bg-gold-500 hover:bg-gold-600 text-brown-900 font-semibold"
+              className="bg-gold hover:bg-gold-dark text-brown-dark font-semibold"
             >
               Agendar Consulta
             </Button>
@@ -85,9 +85,9 @@ export default function Header() {
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? (
-              <X className="h-6 w-6 text-brown-700" />
+              <X className="h-6 w-6 text-brown-dark" />
             ) : (
-              <Menu className="h-6 w-6 text-brown-700" />
+              <Menu className="h-6 w-6 text-brown-dark" />
             )}
           </button>
         </div>
@@ -97,31 +97,31 @@ export default function Header() {
           <div className="md:hidden pb-6 space-y-4 animate-in slide-in-from-top">
             <button
               onClick={() => scrollToSection("about")}
-              className="block w-full text-left text-gray-700 hover:text-brown-700 font-medium py-2 transition-colors"
+              className="block w-full text-left text-brown-dark hover:text-gold font-medium py-2 transition-colors"
             >
               Sobre
             </button>
             <button
               onClick={() => scrollToSection("team")}
-              className="block w-full text-left text-gray-700 hover:text-brown-700 font-medium py-2 transition-colors"
+              className="block w-full text-left text-brown-dark hover:text-gold font-medium py-2 transition-colors"
             >
               Equipe
             </button>
             <button
               onClick={() => scrollToSection("services")}
-              className="block w-full text-left text-gray-700 hover:text-brown-700 font-medium py-2 transition-colors"
+              className="block w-full text-left text-brown-dark hover:text-gold font-medium py-2 transition-colors"
             >
               Especialidades
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className="block w-full text-left text-gray-700 hover:text-brown-700 font-medium py-2 transition-colors"
+              className="block w-full text-left text-brown-dark hover:text-gold font-medium py-2 transition-colors"
             >
               Contato
             </button>
             <Button
               onClick={() => scrollToSection("appointment")}
-              className="w-full bg-gold-500 hover:bg-gold-600 text-brown-900 font-semibold"
+              className="w-full bg-gold hover:bg-gold-dark text-brown-dark font-semibold"
             >
               Agendar Consulta
             </Button>

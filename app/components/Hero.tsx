@@ -15,7 +15,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32"
     >
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
@@ -27,39 +27,23 @@ export default function Hero() {
           priority
         />
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-brown-900/80 via-brown-800/70 to-brown-900/80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-brown-dark/80 via-brown/70 to-brown-dark/80" />
       </div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto space-y-8 animate-in fade-in slide-in-from-bottom-8 duration-1000">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
-            Excelência em
-            <span className="block text-gold-400 mt-2">
-              Cuidados de Saúde
-            </span>
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white leading-tight">
+            Kuehne Clínica 
           </h1>
-          <p className="text-xl sm:text-2xl text-gray-200 max-w-2xl mx-auto leading-relaxed">
-            Na Kuehne Clínica Médica, oferecemos cuidados de saúde de
-            excelência com uma equipe médica especializada e moderna
-            infraestrutura para seu bem-estar.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <Button
               onClick={() => scrollToSection("appointment")}
               size="lg"
-              className="bg-gold-500 hover:bg-gold-600 text-brown-900 font-semibold text-lg px-8 py-6 h-auto group"
+              className="bg-gold hover:bg-gold-dark text-brown-dark font-semibold text-lg px-8 py-6 h-auto group"
             >
               Agendar Consulta
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button
-              onClick={() => scrollToSection("about")}
-              size="lg"
-              variant="outline"
-              className="border-2 border-white text-white hover:bg-white/10 font-semibold text-lg px-8 py-6 h-auto"
-            >
-              Conheça Nossa Clínica
             </Button>
           </div>
         </div>

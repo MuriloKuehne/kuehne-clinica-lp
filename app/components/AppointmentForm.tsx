@@ -77,37 +77,33 @@ export default function AppointmentForm() {
   return (
     <section
       id="appointment"
-      className="py-20 sm:py-24 lg:py-32 bg-gradient-to-b from-brown-50 to-white"
+      className="py-20 sm:py-24 lg:py-32 bg-grey-light"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-brown-800 mb-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-brown-dark mb-4">
               Agende Sua Consulta
             </h2>
-            <div className="w-24 h-1 bg-gold-500 mx-auto mb-6" />
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Preencha o formulário abaixo e nossa equipe entrará em contato
-              para confirmar seu agendamento.
-            </p>
+            <div className="w-24 h-1 bg-gold mx-auto mb-6" />
           </div>
 
           {/* Form */}
-          <Card className="border-brown-200 shadow-lg">
+          <Card className="border-grey shadow-lg bg-white">
             <CardHeader>
-              <CardTitle className="text-2xl text-brown-800 text-center">
+              <CardTitle className="text-2xl text-brown-dark text-center">
                 Solicitar Agendamento
               </CardTitle>
             </CardHeader>
             <CardContent>
               {isSubmitted ? (
                 <div className="text-center py-12">
-                  <CheckCircle2 className="h-16 w-16 text-gold-500 mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold text-brown-800 mb-2">
+                  <CheckCircle2 className="h-16 w-16 text-gold mx-auto mb-4" />
+                  <h3 className="text-2xl font-bold text-brown-dark mb-2">
                     Solicitação Enviada!
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-brown-dark">
                     Nossa equipe entrará em contato em breve para confirmar seu
                     agendamento.
                   </p>
@@ -117,7 +113,7 @@ export default function AppointmentForm() {
                   <div className="grid sm:grid-cols-2 gap-6">
                     {/* Name */}
                     <div className="space-y-2">
-                      <Label htmlFor="name" className="text-brown-800">
+                      <Label htmlFor="name" className="text-brown-dark">
                         Nome Completo *
                       </Label>
                       <Input
@@ -135,7 +131,7 @@ export default function AppointmentForm() {
 
                     {/* Email */}
                     <div className="space-y-2">
-                      <Label htmlFor="email" className="text-brown-800">
+                      <Label htmlFor="email" className="text-brown-dark">
                         Email *
                       </Label>
                       <Input
@@ -156,7 +152,7 @@ export default function AppointmentForm() {
                   <div className="grid sm:grid-cols-2 gap-6">
                     {/* Phone */}
                     <div className="space-y-2">
-                      <Label htmlFor="phone" className="text-brown-800">
+                      <Label htmlFor="phone" className="text-brown-dark">
                         Telefone *
                       </Label>
                       <Input
@@ -175,11 +171,11 @@ export default function AppointmentForm() {
 
                     {/* Date */}
                     <div className="space-y-2">
-                      <Label htmlFor="date" className="text-brown-800">
+                      <Label htmlFor="date" className="text-brown-dark">
                         Data Preferencial
                       </Label>
                       <div className="relative">
-                        <Calendar className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
+                        <Calendar className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-grey-dark" />
                         <Input
                           id="date"
                           name="date"
@@ -194,11 +190,11 @@ export default function AppointmentForm() {
 
                   {/* Time */}
                   <div className="space-y-2">
-                    <Label htmlFor="time" className="text-brown-800">
+                    <Label htmlFor="time" className="text-brown-dark">
                       Horário Preferencial
                     </Label>
                     <div className="relative">
-                      <Clock className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
+                      <Clock className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-grey-dark" />
                       <Input
                         id="time"
                         name="time"
@@ -212,7 +208,7 @@ export default function AppointmentForm() {
 
                   {/* Message */}
                   <div className="space-y-2">
-                    <Label htmlFor="message" className="text-brown-800">
+                    <Label htmlFor="message" className="text-brown-dark">
                       Motivo da Consulta / Observações
                     </Label>
                     <Textarea
@@ -229,7 +225,7 @@ export default function AppointmentForm() {
                   {/* Submit Button */}
                   <Button
                     type="submit"
-                    className="w-full bg-gold-500 hover:bg-gold-600 text-brown-900 font-semibold text-lg py-6"
+                    className="w-full bg-gold hover:bg-gold-dark text-brown-dark font-semibold text-lg py-6"
                   >
                     Enviar Solicitação
                   </Button>

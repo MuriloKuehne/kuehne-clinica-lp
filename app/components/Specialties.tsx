@@ -65,19 +65,15 @@ export default function Specialties() {
   return (
     <section
       id="services"
-      className="py-20 sm:py-24 lg:py-32 bg-gradient-to-b from-brown-50 to-white"
+      className="py-20 sm:py-24 lg:py-32 bg-grey-light"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-brown-800 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-brown-dark mb-4">
             Nossas Especialidades
           </h2>
-          <div className="w-24 h-1 bg-gold-500 mx-auto mb-6" />
-          <p className="text-lg text-gray-700 leading-relaxed">
-            Oferecemos uma ampla gama de especialidades médicas para atender
-            todas as suas necessidades de saúde com excelência e cuidado.
-          </p>
+          <div className="w-24 h-1 bg-gold mx-auto mb-6" />
         </div>
 
         {/* Services Grid */}
@@ -87,20 +83,20 @@ export default function Specialties() {
             return (
               <Card
                 key={index}
-                className="border-brown-200 hover:shadow-lg transition-all duration-300 hover:border-gold-400 hover:-translate-y-1 group"
+                className="border-grey hover:shadow-lg transition-all duration-300 hover:border-gold hover:-translate-y-1 group bg-white"
               >
                 <CardHeader className="pb-4">
                   <div className="flex justify-center mb-4">
-                    <div className="p-4 bg-brown-100 rounded-full group-hover:bg-gold-100 transition-colors duration-300">
-                      <Icon className="h-8 w-8 text-brown-700 group-hover:text-gold-700 transition-colors duration-300" />
+                    <div className="p-4 bg-grey-light rounded-full group-hover:bg-gold/20 transition-colors duration-300">
+                      <Icon className="h-8 w-8 text-brown-dark group-hover:text-gold transition-colors duration-300" />
                     </div>
                   </div>
-                  <CardTitle className="text-center text-brown-800 text-lg">
+                  <CardTitle className="text-center text-brown-dark text-lg">
                     {specialty.title}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-600 text-sm leading-relaxed text-center">
+                  <p className="text-brown-dark text-sm leading-relaxed text-center">
                     {specialty.description}
                   </p>
                 </CardContent>
