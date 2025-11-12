@@ -34,55 +34,50 @@ export default function Header() {
       }`}
     >
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center h-auto py-4">
-          {/* Centered Logo and Clinic Name */}
-          <div className="flex items-center justify-center gap-3 sm:gap-4 w-full mb-4">
-            <button
-              onClick={() => scrollToSection("hero")}
-              className="flex items-center gap-3 sm:gap-4 hover:opacity-80 transition-opacity"
-            >
-              <Image
-                src="/logo.jpg"
-                alt="Kuehne Clínica Médica Logo"
-                width={50}
-                height={50}
-                className="object-contain w-12 h-12 sm:w-14 sm:h-14"
-              />
-              <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-brown-dark hover:text-gold transition-colors text-center">
-                Kuehne Clínica Médica
-              </span>
-            </button>
-          </div>
+        <div className="flex items-center justify-between h-auto ">
+          {/* Logo on the left */}
+          <button
+            onClick={() => scrollToSection("hero")}
+            className="flex items-center hover:opacity-80 transition-opacity -my-2 p-0"
+          >
+            <Image
+              src="/logo-2.jpg"
+              alt="Kuehne Clínica Médica Logo"
+              width={160}
+              height={160}
+              className="object-contain rounded-full w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 -my-1"
+            />
+          </button>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
             <button
               onClick={() => scrollToSection("about")}
-              className="text-brown-dark hover:text-gold font-medium transition-colors"
+              className="text-brown-dark hover:text-gold font-medium text-lg transition-colors"
             >
               Sobre
             </button>
             <button
               onClick={() => scrollToSection("team")}
-              className="text-brown-dark hover:text-gold font-medium transition-colors"
+              className="text-brown-dark hover:text-gold font-medium text-lg transition-colors"
             >
               Equipe
             </button>
             <button
               onClick={() => scrollToSection("services")}
-              className="text-brown-dark hover:text-gold font-medium transition-colors"
+              className="text-brown-dark hover:text-gold font-medium text-lg transition-colors"
             >
               Especialidades
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className="text-brown-dark hover:text-gold font-medium transition-colors"
+              className="text-brown-dark hover:text-gold font-medium text-lg transition-colors"
             >
               Contato
             </button>
             <Button
               onClick={() => scrollToSection("appointment")}
-              className="bg-gold hover:bg-gold-dark text-brown-dark font-semibold"
+              className="bg-gold hover:bg-gold-dark text-brown-dark font-semibold text-lg"
             >
               Agendar Consulta
             </Button>
@@ -90,7 +85,7 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2"
+            className="md:hidden p-2 ml-auto"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -104,28 +99,28 @@ export default function Header() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden pb-6 space-y-4 animate-in slide-in-from-top">
+          <div className="md:hidden pb-4 space-y-3 animate-in slide-in-from-top">
             <button
               onClick={() => scrollToSection("about")}
-              className="block w-full text-left text-brown-dark hover:text-gold font-medium py-2 transition-colors"
+              className="block w-full text-left text-brown-dark hover:text-gold font-medium text-lg py-2 transition-colors"
             >
               Sobre
             </button>
             <button
               onClick={() => scrollToSection("team")}
-              className="block w-full text-left text-brown-dark hover:text-gold font-medium py-2 transition-colors"
+              className="block w-full text-left text-brown-dark hover:text-gold font-medium text-lg py-2 transition-colors"
             >
               Equipe
             </button>
             <button
               onClick={() => scrollToSection("services")}
-              className="block w-full text-left text-brown-dark hover:text-gold font-medium py-2 transition-colors"
+              className="block w-full text-left text-brown-dark hover:text-gold font-medium text-lg py-2 transition-colors"
             >
               Especialidades
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className="block w-full text-left text-brown-dark hover:text-gold font-medium py-2 transition-colors"
+              className="block w-full text-left text-brown-dark hover:text-gold font-medium text-lg py-2 transition-colors"
             >
               Contato
             </button>
