@@ -51,7 +51,7 @@ export default function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="py-20 sm:py-24 lg:py-32 bg-white"
+      className="py-20 sm:py-24 lg:py-32 bg-grey-light"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}

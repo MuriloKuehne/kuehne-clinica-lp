@@ -1,43 +1,31 @@
-import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 
 export default function MedicalTeam() {
   return (
     <section
       id="team"
-      className="py-20 sm:py-24 lg:py-32 bg-white"
+      className="py-20 sm:py-24 lg:py-32 bg-gradient-to-r from-brown-dark/80 via-brown/70 to-brown-dark/80"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-brown-dark mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             Nossos Fundadores
           </h2>
           <div className="w-24 h-1 bg-gold mx-auto mb-6" />
         </div>
 
         {/* Founders Grid */}
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
           {/* Dr. Aldo Tardiole Kuehne */}
           <Card className="border-grey overflow-hidden bg-white shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 group animate-float">
             <div className="flex flex-col lg:flex-row">
-              {/* Photo */}
-              <div className="relative w-full lg:w-80 h-80 lg:h-auto flex-shrink-0 overflow-hidden">
-                <Image
-                  src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80"
-                  alt="Dr. Aldo Tardiole Kuehne"
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-brown-dark/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              </div>
-
               {/* Content */}
-              <CardContent className="p-6 lg:p-8 flex flex-col justify-center group-hover:bg-gradient-to-br from-white to-brown-dark/5 transition-colors duration-500">
-                <h3 className="text-2xl sm:text-3xl font-bold text-brown-dark mb-2 group-hover:text-brown-dark transition-colors duration-300">
+              <CardContent className="p-4 lg:p-6 flex flex-col justify-center group-hover:bg-gradient-to-br from-white to-brown-dark/5 transition-colors duration-500">
+                <h3 className="text-xl sm:text-2xl font-bold text-brown-dark mb-2 group-hover:text-brown-dark transition-colors duration-300">
                   Dr. Aldo Tardiole Kuehne
                 </h3>
-                <p className="text-gold font-semibold mb-4 text-lg group-hover:scale-105 transition-transform duration-300 inline-block">
+                <p className="text-gold font-semibold mb-3 text-base group-hover:scale-105 transition-transform duration-300 inline-block">
                   Fundador e Diretor da Clínica
                 </p>
                 <div className="mb-4">
@@ -60,23 +48,12 @@ export default function MedicalTeam() {
           {/* Dra. Ana Karina Ferraz do Amaral Kuehne */}
           <Card className="border-grey overflow-hidden bg-white shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 group animate-float">
             <div className="flex flex-col lg:flex-row">
-              {/* Photo */}
-              <div className="relative w-full lg:w-80 h-80 lg:h-auto flex-shrink-0 overflow-hidden">
-                <Image
-                  src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80"
-                  alt="Dra. Ana Karina Ferraz do Amaral Kuehne"
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-brown-dark/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              </div>
-
               {/* Content */}
-              <CardContent className="p-6 lg:p-8 flex flex-col justify-center group-hover:bg-gradient-to-br from-white to-brown-dark/5 transition-colors duration-500">
-                <h3 className="text-2xl sm:text-3xl font-bold text-brown-dark mb-2 group-hover:text-brown-dark transition-colors duration-300">
+              <CardContent className="p-4 lg:p-6 flex flex-col justify-center group-hover:bg-gradient-to-br from-white to-brown-dark/5 transition-colors duration-500">
+                <h3 className="text-xl sm:text-2xl font-bold text-brown-dark mb-2 group-hover:text-brown-dark transition-colors duration-300">
                   Dra. Ana Karina Ferraz do Amaral Kuehne
                 </h3>
-                <p className="text-gold font-semibold mb-4 text-lg group-hover:scale-105 transition-transform duration-300 inline-block">
+                <p className="text-gold font-semibold mb-3 text-base group-hover:scale-105 transition-transform duration-300 inline-block">
                   Fundadora e Dermatologista
                 </p>
                 <div className="mb-4">
@@ -88,7 +65,7 @@ export default function MedicalTeam() {
                   </ul>
                 </div>
                 <p className="text-brown-dark leading-relaxed group-hover:text-brown-dark/90 transition-colors duration-300">
-                  Muito conhecida por ser a melhor dermatologista e sempre estar atualizada com o melhor que as ciências médicas tem para oferecer. A Dra. Ana Karina dedica-se a proporcionar tratamentos dermatológicos de excelência, combinando conhecimento científico avançado com cuidado humanizado.
+                  Muito conhecida por ser a melhor dermatologista e sempre estar atualizada com o melhor que as ciências médicas têm para oferecer. A Dra. Ana Karina dedica-se a proporcionar tratamentos dermatológicos de excelência, combinando conhecimento científico avançado com cuidado humanizado.
                 </p>
               </CardContent>
             </div>

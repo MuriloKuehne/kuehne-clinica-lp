@@ -16,7 +16,7 @@ const specialties = [
   },
   {
     icon: Zap,
-    title: "Cirurgias Videolaparoscopicas",
+    title: "Cirurgias Videolaparoscópicas",
     description:
       "Procedimentos cirúrgicos minimamente invasivos utilizando técnicas de videolaparoscopia para tratamentos precisos e recuperação mais rápida.",
   },
@@ -34,7 +34,7 @@ const specialties = [
   },
   {
     icon: Scissors,
-    title: "Cirurgias Cutaneas",
+    title: "Cirurgias Cutâneas",
     description:
       "Procedimentos cirúrgicos especializados para tratamento de lesões de pele, remoção de lesões benignas e malignas, e cirurgias dermatológicas.",
   },

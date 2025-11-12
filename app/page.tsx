@@ -17,10 +17,10 @@ export default function Home() {
       <About />
       <MedicalTeam />
       <Specialties />
-      <Testimonials />
       <AppointmentForm />
       <Location />
       <Contact />
+      <Testimonials />
       <Footer />
     </main>
   )

@@ -1,26 +1,33 @@
+import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
-import { MapPin, Phone, Clock, Mail } from "lucide-react"
+import { MapPin, Phone, Mail } from "lucide-react"
 
 export default function Location() {
   const address = "296, R. Sete de Setembro, 264, Machado - MG, 37750-000"
   const phone = "(35) 3295-7558"
   const email = "contato@kuehneclinica.com.br"
 
-  const openingHours = [
-    { day: "Segunda a Sexta", hours: "08:00 - 18:00" },
-    { day: "Sábado", hours: "08:00 - 12:00" },
-    { day: "Domingo", hours: "Fechado" },
-  ]
-
   return (
     <section
       id="location"
-      className="py-20 sm:py-24 lg:py-32 bg-grey-light"
+      className="relative py-20 sm:py-24 lg:py-32 overflow-hidden"
     >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/clinica-1.jpg"
+          alt="Kuehne Clínica Médica"
+          fill
+          className="object-cover"
+          priority
+        />
+        {/* Overlay for better text readability */}
+        <div className="absolute inset-0 bg-brown-dark/40" />
+      </div>
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-brown-dark mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             Localização e Contato
           </h2>
           <div className="w-24 h-1 bg-gold mx-auto mb-6" />
@@ -96,32 +103,6 @@ export default function Location() {
                     >
                       {email}
                     </a>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-grey bg-white">
-              <CardContent className="p-6">
-                <div className="flex items-start gap-4">
-                  <div className="p-3 bg-grey-light rounded-full">
-                    <Clock className="h-6 w-6 text-brown-dark" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-brown-dark mb-4">
-                      Horário de Funcionamento
-                    </h3>
-                    <div className="space-y-2">
-                      {openingHours.map((schedule, index) => (
-                        <div
-                          key={index}
-                          className="flex justify-between text-brown-dark"
-                        >
-                          <span>{schedule.day}</span>
-                          <span className="font-medium">{schedule.hours}</span>
-                        </div>
-                      ))}
-                    </div>
                   </div>
                 </div>
               </CardContent>

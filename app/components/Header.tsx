@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 
@@ -34,13 +35,22 @@ export default function Header() {
     >
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center h-auto py-4">
-          {/* Centered Clinic Name */}
-          <div className="flex items-center justify-center w-full mb-4">
+          {/* Centered Logo and Clinic Name */}
+          <div className="flex items-center justify-center gap-3 sm:gap-4 w-full mb-4">
             <button
               onClick={() => scrollToSection("hero")}
-              className="text-3xl sm:text-4xl font-bold text-brown-dark hover:text-gold transition-colors text-center"
+              className="flex items-center gap-3 sm:gap-4 hover:opacity-80 transition-opacity"
             >
-              Kuehne Clínica Médica
+              <Image
+                src="/logo.jpg"
+                alt="Kuehne Clínica Médica Logo"
+                width={50}
+                height={50}
+                className="object-contain w-12 h-12 sm:w-14 sm:h-14"
+              />
+              <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-brown-dark hover:text-gold transition-colors text-center">
+                Kuehne Clínica Médica
+              </span>
             </button>
           </div>
 

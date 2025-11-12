@@ -48,8 +48,8 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
           <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
             <Image
-              src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=800&q=80"
-              alt="Modern medical clinic interior"
+              src="/clinica-4.jpg"
+              alt="Kuehne Clínica Médica"
               fill
               className="object-cover"
             />

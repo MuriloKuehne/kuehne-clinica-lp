@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react"
 
 export default function Footer() {
@@ -16,10 +17,10 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Clinic Info */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold text-gold">
+            <h3 className="text-2xl font-bold text-gold mb-4">
               Kuehne Clínica Médica
             </h3>
-            <div className="flex gap-4 pt-2">
+            <div className="flex gap-4 mb-4">
               <a
                 href="#"
                 className="p-2 bg-brown rounded-full hover:bg-gold transition-colors"
@@ -41,6 +42,15 @@ export default function Footer() {
               >
                 <Linkedin className="h-5 w-5" />
               </a>
+            </div>
+            <div className="pt-2">
+              <Image
+                src="/logo.jpg"
+                alt="Kuehne Clínica Médica Logo"
+                width={120}
+                height={120}
+                className="object-contain"
+              />
             </div>
           </div>
 
@@ -92,11 +102,10 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-grey-light">
               <li>Clínica Geral</li>
-              <li>Cardiologia</li>
-              <li>Ortopedia</li>
-              <li>Pediatria</li>
-              <li>Dermatologia</li>
-              <li>Ginecologia</li>
+              <li>Cirurgias Videolaparoscópicas</li>
+              <li>Colonoscopia</li>
+              <li>Endoscopia</li>
+              <li>Cirurgias Cutâneas</li>
             </ul>
           </div>
 
@@ -126,10 +135,10 @@ export default function Footer() {
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-gold flex-shrink-0" />
                 <a
-                  href="mailto:contato@kuehneclinica.com.br"
+                  href="mailto:kuehneclinicamedica@gmail.com"
                   className="text-grey-light hover:text-gold transition-colors text-sm break-all"
                 >
-                  contato@kuehneclinica.com.br
+                  kuehneclinicamedica@gmail.com
                 </a>
               </li>
             </ul>

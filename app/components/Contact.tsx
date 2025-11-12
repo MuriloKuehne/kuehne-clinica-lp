@@ -1,13 +1,13 @@
 "use client"
 
 import { Card, CardContent } from "@/components/ui/card"
-import { Phone, Mail, MapPin, Clock } from "lucide-react"
+import { Phone, Mail, MapPin } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function Contact() {
   const contactInfo = {
     phone: "(35) 3295-7558",
-    email: "contato@kuehneclinica.com.br",
+    email: "kuehneclinicamedica@gmail.com",
     address: "296, R. Sete de Setembro, 264, Machado - MG, 37750-000",
   }
 
@@ -21,7 +21,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="py-20 sm:py-24 lg:py-32 bg-white"
+      className="py-20 sm:py-24 lg:py-32 bg-grey-light"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
@@ -33,7 +33,7 @@ export default function Contact() {
         </div>
 
         {/* Contact Cards */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           <Card className="border-grey hover:shadow-lg transition-all duration-300 hover:border-gold text-center bg-white">
             <CardContent className="p-6">
               <div className="flex justify-center mb-4">
@@ -80,21 +80,6 @@ export default function Contact() {
             </CardContent>
           </Card>
 
-          <Card className="border-grey hover:shadow-lg transition-all duration-300 hover:border-gold text-center bg-white">
-            <CardContent className="p-6">
-              <div className="flex justify-center mb-4">
-                <div className="p-4 bg-grey-light rounded-full">
-                  <Clock className="h-8 w-8 text-brown-dark" />
-                </div>
-              </div>
-              <h3 className="font-semibold text-brown-dark mb-2">Horário</h3>
-              <p className="text-brown-dark text-sm">
-                Seg-Sex: 8h-18h
-                <br />
-                Sáb: 8h-12h
-              </p>
-            </CardContent>
-          </Card>
         </div>
 
         {/* CTA */}
