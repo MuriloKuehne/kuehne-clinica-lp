@@ -27,7 +27,7 @@ export default function Location() {
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4">
             Localização e Contato
           </h2>
           <div className="w-24 h-1 bg-gold mx-auto mb-6" />
@@ -57,10 +57,10 @@ export default function Location() {
                     <MapPin className="h-6 w-6 text-brown-dark" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-brown-dark mb-2">
+                    <h3 className="font-semibold text-brown-dark mb-2 text-lg">
                       Endereço
                     </h3>
-                    <p className="text-brown-dark leading-relaxed">{address}</p>
+                    <p className="text-brown-dark leading-relaxed text-base">{address}</p>
                   </div>
                 </div>
               </CardContent>
@@ -73,12 +73,12 @@ export default function Location() {
                     <Phone className="h-6 w-6 text-brown-dark" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-brown-dark mb-2">
+                    <h3 className="font-semibold text-brown-dark mb-2 text-lg">
                       Telefone
                     </h3>
                     <a
                       href={`tel:${phone.replace(/\s/g, "")}`}
-                      className="text-brown-dark hover:text-gold transition-colors"
+                      className="text-brown-dark hover:text-gold transition-colors text-base"
                     >
                       {phone}
                     </a>
@@ -94,12 +94,12 @@ export default function Location() {
                     <Mail className="h-6 w-6 text-brown-dark" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-brown-dark mb-2">
+                    <h3 className="font-semibold text-brown-dark mb-2 text-lg">
                       Email
                     </h3>
                     <a
                       href={`mailto:${email}`}
-                      className="text-brown-dark hover:text-gold transition-colors"
+                      className="text-brown-dark hover:text-gold transition-colors text-base"
                     >
                       {email}
                     </a>

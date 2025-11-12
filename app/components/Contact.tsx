@@ -26,7 +26,7 @@ export default function Contact() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-brown-dark mb-4">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-brown-dark mb-4">
             Entre em Contato
           </h2>
           <div className="w-24 h-1 bg-gold mx-auto mb-6" />
@@ -41,10 +41,10 @@ export default function Contact() {
                   <Phone className="h-8 w-8 text-brown-dark" />
                 </div>
               </div>
-              <h3 className="font-semibold text-brown-dark mb-2">Telefone</h3>
+              <h3 className="font-semibold text-brown-dark mb-2 text-lg">Telefone</h3>
               <a
                 href={`tel:${contactInfo.phone.replace(/\s/g, "")}`}
-                className="text-brown-dark hover:text-gold transition-colors"
+                className="text-brown-dark hover:text-gold transition-colors text-lg"
               >
                 {contactInfo.phone}
               </a>
@@ -58,10 +58,10 @@ export default function Contact() {
                   <Mail className="h-8 w-8 text-brown-dark" />
                 </div>
               </div>
-              <h3 className="font-semibold text-brown-dark mb-2">Email</h3>
+              <h3 className="font-semibold text-brown-dark mb-2 text-lg">Email</h3>
               <a
                 href={`mailto:${contactInfo.email}`}
-                className="text-brown-dark hover:text-gold transition-colors break-all"
+                className="text-brown-dark hover:text-gold transition-colors break-all text-lg"
               >
                 {contactInfo.email}
               </a>
@@ -75,8 +75,8 @@ export default function Contact() {
                   <MapPin className="h-8 w-8 text-brown-dark" />
                 </div>
               </div>
-              <h3 className="font-semibold text-brown-dark mb-2">Endereço</h3>
-              <p className="text-brown-dark text-sm">{contactInfo.address}</p>
+              <h3 className="font-semibold text-brown-dark mb-2 text-lg">Endereço</h3>
+              <p className="text-brown-dark text-base">{contactInfo.address}</p>
             </CardContent>
           </Card>
 

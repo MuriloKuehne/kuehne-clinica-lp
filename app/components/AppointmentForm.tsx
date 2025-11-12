@@ -83,7 +83,7 @@ export default function AppointmentForm() {
         <div className="max-w-3xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-brown-dark mb-4">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-brown-dark mb-4">
               Agende Sua Consulta
             </h2>
             <div className="w-24 h-1 bg-gold mx-auto mb-6" />
@@ -92,7 +92,7 @@ export default function AppointmentForm() {
           {/* Form */}
           <Card className="border-grey shadow-lg bg-white">
             <CardHeader>
-              <CardTitle className="text-2xl text-brown-dark text-center">
+              <CardTitle className="text-3xl text-brown-dark text-center">
                 Solicitar Agendamento
               </CardTitle>
             </CardHeader>
@@ -100,10 +100,10 @@ export default function AppointmentForm() {
               {isSubmitted ? (
                 <div className="text-center py-12">
                   <CheckCircle2 className="h-16 w-16 text-gold mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold text-brown-dark mb-2">
+                  <h3 className="text-3xl font-bold text-brown-dark mb-2">
                     Solicitação Enviada!
                   </h3>
-                  <p className="text-brown-dark">
+                  <p className="text-brown-dark text-lg">
                     Nossa equipe entrará em contato em breve para confirmar seu
                     agendamento.
                   </p>
@@ -113,7 +113,7 @@ export default function AppointmentForm() {
                   <div className="grid sm:grid-cols-2 gap-6">
                     {/* Name */}
                     <div className="space-y-2">
-                      <Label htmlFor="name" className="text-brown-dark">
+                      <Label htmlFor="name" className="text-brown-dark text-base">
                         Nome Completo *
                       </Label>
                       <Input
@@ -131,7 +131,7 @@ export default function AppointmentForm() {
 
                     {/* Email */}
                     <div className="space-y-2">
-                      <Label htmlFor="email" className="text-brown-dark">
+                      <Label htmlFor="email" className="text-brown-dark text-base">
                         Email *
                       </Label>
                       <Input
@@ -152,7 +152,7 @@ export default function AppointmentForm() {
                   <div className="grid sm:grid-cols-2 gap-6">
                     {/* Phone */}
                     <div className="space-y-2">
-                      <Label htmlFor="phone" className="text-brown-dark">
+                      <Label htmlFor="phone" className="text-brown-dark text-base">
                         Telefone *
                       </Label>
                       <Input
@@ -171,7 +171,7 @@ export default function AppointmentForm() {
 
                     {/* Date */}
                     <div className="space-y-2">
-                      <Label htmlFor="date" className="text-brown-dark">
+                      <Label htmlFor="date" className="text-brown-dark text-base">
                         Data Preferencial
                       </Label>
                       <div className="relative">
@@ -190,7 +190,7 @@ export default function AppointmentForm() {
 
                   {/* Time */}
                   <div className="space-y-2">
-                    <Label htmlFor="time" className="text-brown-dark">
+                    <Label htmlFor="time" className="text-brown-dark text-base">
                       Horário Preferencial
                     </Label>
                     <div className="relative">
@@ -208,7 +208,7 @@ export default function AppointmentForm() {
 
                   {/* Message */}
                   <div className="space-y-2">
-                    <Label htmlFor="message" className="text-brown-dark">
+                    <Label htmlFor="message" className="text-brown-dark text-base">
                       Motivo da Consulta / Observações
                     </Label>
                     <Textarea

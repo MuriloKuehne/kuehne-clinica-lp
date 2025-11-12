@@ -38,7 +38,7 @@ export default function About() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-brown-dark mb-4">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-brown-dark mb-4">
             Sobre a Kuehne Clínica Médica
           </h2>
           <div className="w-24 h-1 bg-gold mx-auto mb-6" />
@@ -55,10 +55,10 @@ export default function About() {
             />
           </div>
           <div className="space-y-6">
-            <h3 className="text-2xl sm:text-3xl font-bold text-gold-dark">
+            <h3 className="text-3xl sm:text-4xl font-bold text-gold-dark">
               Nossa Missão
             </h3>
-            <p className="text-brown-dark leading-relaxed text-lg">
+            <p className="text-brown-dark leading-relaxed text-xl">
               Proporcionar cuidados de saúde de excelência, combinando
               conhecimento médico avançado com um atendimento humanizado e
               acolhedor.
@@ -68,7 +68,7 @@ export default function About() {
 
         {/* Values */}
         <div>
-          <h3 className="text-2xl sm:text-3xl font-bold text-gold-dark text-center mb-12">
+          <h3 className="text-3xl sm:text-4xl font-bold text-gold-dark text-center mb-12">
             Nossos Valores
           </h3>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -85,10 +85,10 @@ export default function About() {
                         <Icon className="h-8 w-8 text-brown-dark" />
                       </div>
                     </div>
-                    <h4 className="text-xl font-semibold text-gold-dark mb-3">
+                    <h4 className="text-2xl font-semibold text-gold-dark mb-3">
                       {value.title}
                     </h4>
-                    <p className="text-brown-dark leading-relaxed">
+                    <p className="text-brown-dark leading-relaxed text-lg">
                       {value.description}
                     </p>
                   </CardContent>

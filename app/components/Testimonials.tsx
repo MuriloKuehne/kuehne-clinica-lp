@@ -56,7 +56,7 @@ export default function Testimonials() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-brown-dark mb-4">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-brown-dark mb-4">
             O Que Nossos Pacientes Dizem
           </h2>
           <div className="w-24 h-1 bg-gold mx-auto mb-6" />
@@ -81,7 +81,7 @@ export default function Testimonials() {
                 </div>
 
                 {/* Testimonial Text */}
-                <p className="text-brown-dark leading-relaxed mb-6 italic">
+                <p className="text-brown-dark leading-relaxed mb-6 italic text-base">
                   "{testimonial.text}"
                 </p>
 
@@ -96,10 +96,10 @@ export default function Testimonials() {
                     />
                   </div>
                   <div>
-                    <p className="font-semibold text-brown-dark">
+                    <p className="font-semibold text-brown-dark text-base">
                       {testimonial.name}
                     </p>
-                    <p className="text-sm text-brown-dark">{testimonial.role}</p>
+                    <p className="text-base text-brown-dark">{testimonial.role}</p>
                   </div>
                 </div>
               </CardContent>

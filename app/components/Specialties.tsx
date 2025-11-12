@@ -49,7 +49,7 @@ export default function Specialties() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-brown-dark mb-4">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-brown-dark mb-4">
             Nossas Especialidades
           </h2>
           <div className="w-24 h-1 bg-gold mx-auto mb-6" />
@@ -72,12 +72,12 @@ export default function Specialties() {
                         <Icon className="h-8 w-8 text-brown-dark group-hover:text-gold transition-colors duration-300" />
                       </div>
                     </div>
-                    <CardTitle className="text-center text-gold-dark text-lg">
+                    <CardTitle className="text-center text-gold-dark text-xl">
                       {specialty.title}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-brown-dark text-sm leading-relaxed text-center">
+                    <p className="text-brown-dark text-base leading-relaxed text-center">
                       {specialty.description}
                     </p>
                   </CardContent>
@@ -106,7 +106,7 @@ export default function Specialties() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-brown-dark text-base leading-relaxed text-center">
+                    <p className="text-brown-dark text-lg leading-relaxed text-center">
                       {specialty.description}
                     </p>
                   </CardContent>
