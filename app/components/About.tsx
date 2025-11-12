@@ -55,7 +55,7 @@ export default function About() {
             />
           </div>
           <div className="space-y-6">
-            <h3 className="text-2xl sm:text-3xl font-bold text-brown-dark">
+            <h3 className="text-2xl sm:text-3xl font-bold text-gold-dark">
               Nossa Missão
             </h3>
             <p className="text-brown-dark leading-relaxed text-lg">
@@ -68,7 +68,7 @@ export default function About() {
 
         {/* Values */}
         <div>
-          <h3 className="text-2xl sm:text-3xl font-bold text-brown-dark text-center mb-12">
+          <h3 className="text-2xl sm:text-3xl font-bold text-gold-dark text-center mb-12">
             Nossos Valores
           </h3>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -85,7 +85,7 @@ export default function About() {
                         <Icon className="h-8 w-8 text-brown-dark" />
                       </div>
                     </div>
-                    <h4 className="text-xl font-semibold text-brown-dark mb-3">
+                    <h4 className="text-xl font-semibold text-gold-dark mb-3">
                       {value.title}
                     </h4>
                     <p className="text-brown-dark leading-relaxed">

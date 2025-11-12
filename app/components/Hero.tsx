@@ -34,7 +34,7 @@ export default function Hero() {
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto space-y-8 animate-in fade-in slide-in-from-bottom-8 duration-1000">
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white leading-tight">
-            Kuehne Clínica 
+            Kuehne Clínica Médica
           </h1>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <Button

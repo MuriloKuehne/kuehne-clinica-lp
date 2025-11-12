@@ -1,13 +1,10 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import {
-  Heart,
-  Brain,
-  Baby,
-  Bone,
-  Eye,
-  Activity,
   Stethoscope,
+  Zap,
+  Activity,
   Microscope,
+  Scissors,
 } from "lucide-react"
 
 const specialties = [
@@ -18,46 +15,28 @@ const specialties = [
       "Atendimento médico completo para toda a família, com foco em prevenção, diagnóstico e tratamento de doenças comuns.",
   },
   {
-    icon: Heart,
-    title: "Cardiologia",
+    icon: Zap,
+    title: "Cirurgias Videolaparoscopicas",
     description:
-      "Cuidados especializados do coração e sistema cardiovascular, incluindo exames preventivos e tratamento de doenças cardíacas.",
-  },
-  {
-    icon: Bone,
-    title: "Ortopedia",
-    description:
-      "Tratamento de lesões musculoesqueléticas, fraturas, problemas articulares e cirurgias ortopédicas.",
-  },
-  {
-    icon: Baby,
-    title: "Pediatria",
-    description:
-      "Cuidados médicos especializados para bebês, crianças e adolescentes, com acompanhamento do desenvolvimento.",
-  },
-  {
-    icon: Eye,
-    title: "Dermatologia",
-    description:
-      "Diagnóstico e tratamento de doenças de pele, além de procedimentos estéticos e cuidados dermatológicos.",
+      "Procedimentos cirúrgicos minimamente invasivos utilizando técnicas de videolaparoscopia para tratamentos precisos e recuperação mais rápida.",
   },
   {
     icon: Activity,
-    title: "Ginecologia",
+    title: "Colonoscopia",
     description:
-      "Saúde da mulher com foco em prevenção, exames ginecológicos e acompanhamento durante todas as fases da vida.",
-  },
-  {
-    icon: Brain,
-    title: "Neurologia",
-    description:
-      "Diagnóstico e tratamento de doenças do sistema nervoso, incluindo dores de cabeça, epilepsia e distúrbios neurológicos.",
+      "Exame endoscópico do intestino grosso para diagnóstico, prevenção e tratamento de doenças do cólon e reto.",
   },
   {
     icon: Microscope,
-    title: "Exames Laboratoriais",
+    title: "Endoscopia",
     description:
-      "Laboratório completo com exames de sangue, urina e outros testes diagnósticos para avaliação da saúde.",
+      "Exame endoscópico do sistema digestivo superior para diagnóstico e tratamento de condições do esôfago, estômago e duodeno.",
+  },
+  {
+    icon: Scissors,
+    title: "Cirurgias Cutaneas",
+    description:
+      "Procedimentos cirúrgicos especializados para tratamento de lesões de pele, remoção de lesões benignas e malignas, e cirurgias dermatológicas.",
   },
 ]
 
@@ -77,32 +56,64 @@ export default function Specialties() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {specialties.map((specialty, index) => {
-            const Icon = specialty.icon
-            return (
-              <Card
-                key={index}
-                className="border-grey hover:shadow-lg transition-all duration-300 hover:border-gold hover:-translate-y-1 group bg-white"
-              >
-                <CardHeader className="pb-4">
-                  <div className="flex justify-center mb-4">
-                    <div className="p-4 bg-grey-light rounded-full group-hover:bg-gold/20 transition-colors duration-300">
-                      <Icon className="h-8 w-8 text-brown-dark group-hover:text-gold transition-colors duration-300" />
+        <div className="space-y-6">
+          {/* Top row - 3 specialties */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {specialties.slice(0, 3).map((specialty, index) => {
+              const Icon = specialty.icon
+              return (
+                <Card
+                  key={index}
+                  className="border-grey hover:shadow-lg transition-all duration-300 hover:border-gold hover:-translate-y-1 group bg-white"
+                >
+                  <CardHeader className="pb-4">
+                    <div className="flex justify-center mb-4">
+                      <div className="p-4 bg-grey-light rounded-full group-hover:bg-gold/20 transition-colors duration-300">
+                        <Icon className="h-8 w-8 text-brown-dark group-hover:text-gold transition-colors duration-300" />
+                      </div>
                     </div>
-                  </div>
-                  <CardTitle className="text-center text-brown-dark text-lg">
-                    {specialty.title}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-brown-dark text-sm leading-relaxed text-center">
-                    {specialty.description}
-                  </p>
-                </CardContent>
-              </Card>
-            )
-          })}
+                    <CardTitle className="text-center text-gold-dark text-lg">
+                      {specialty.title}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-brown-dark text-sm leading-relaxed text-center">
+                      {specialty.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              )
+            })}
+          </div>
+
+          {/* Bottom row - 2 specialties (larger, rectangular) */}
+          <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-6">
+            {specialties.slice(3, 5).map((specialty, index) => {
+              const Icon = specialty.icon
+              return (
+                <Card
+                  key={index + 3}
+                  className="border-grey hover:shadow-lg transition-all duration-300 hover:border-gold hover:-translate-y-1 group bg-white lg:min-h-[200px]"
+                >
+                  <CardHeader className="pb-4">
+                    <div className="flex justify-center mb-4">
+                      <div className="p-4 bg-grey-light rounded-full group-hover:bg-gold/20 transition-colors duration-300">
+                        <Icon className="h-10 w-10 text-brown-dark group-hover:text-gold transition-colors duration-300" />
+                      </div>
+                    </div>
+                    <CardTitle className="text-center text-gold-dark text-xl">
+                      {specialty.title}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-brown-dark text-base leading-relaxed text-center">
+                      {specialty.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              )
+            })}
+          </div>
         </div>
       </div>
     </section>
