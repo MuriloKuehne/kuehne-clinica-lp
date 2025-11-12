@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     description: 'Kuehne Clínica Médica oferece cuidados de saúde de excelência com uma equipe médica especializada e moderna infraestrutura. Agende sua consulta hoje.',
     images: [
       {
-        url: '/logo-2.jpg',
+        url: '/logo.jpg',
         width: 1200,
         height: 630,
         alt: 'Kuehne Clínica Médica',
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Kuehne Clínica Médica | Excelência em Cuidados de Saúde',
     description: 'Kuehne Clínica Médica oferece cuidados de saúde de excelência com uma equipe médica especializada e moderna infraestrutura.',
-    images: ['/logo-2.jpg'],
+    images: ['/logo.jpg'],
   },
   robots: {
     index: true,

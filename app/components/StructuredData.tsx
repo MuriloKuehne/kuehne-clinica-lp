@@ -8,8 +8,8 @@ export default function StructuredData() {
     "name": "Kuehne Clínica Médica",
     "alternateName": "Kuehne Clínica",
     "url": baseUrl,
-    "logo": `${baseUrl}/logo-2.jpg`,
-    "image": `${baseUrl}/logo-2.jpg`,
+    "logo": `${baseUrl}/logo.jpg`,
+    "image": `${baseUrl}/logo.jpg`,
     "description": "Kuehne Clínica Médica oferece cuidados de saúde de excelência com uma equipe médica especializada e moderna infraestrutura.",
     "address": {
       "@type": "PostalAddress",
